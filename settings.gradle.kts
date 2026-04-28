@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "trackrun"
 include(":app")
+include(":auth:presentation")
