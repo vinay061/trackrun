@@ -1,1 +1,6 @@
 com.project.presentation
+string runique
+string runique_description
+string sign_in
+string sign_up
+string welcome_to_runique

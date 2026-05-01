@@ -23,5 +23,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "trackrun"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":auth:presentation")
+include(":core:presentation:designsystem")
