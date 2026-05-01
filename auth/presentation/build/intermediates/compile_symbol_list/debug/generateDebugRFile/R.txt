@@ -1,0 +1,5 @@
+int string runique 0x0
+int string runique_description 0x0
+int string sign_in 0x0
+int string sign_up 0x0
+int string welcome_to_runique 0x0
