@@ -1,5 +1,17 @@
 R_DEF: Internal format may change without notice
 local
+string already_have_an_account
+string at_least_one_number
+string at_least_x_characters
+string contains_lowercase_char
+string contains_uppercase_char
+string create_account
+string email
+string example_email
+string login
+string must_be_a_valid_email
+string password
+string register
 string runique
 string runique_description
 string sign_in
