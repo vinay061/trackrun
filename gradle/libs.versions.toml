@@ -80,6 +80,7 @@ projectVersionCode = "1"
 projectMinSdkVersion = "25"
 projectTargetSdkVersion = "36"
 projectCompileSdkVersion = "36"
+lifecycleViewmodelKtx = "2.10.0"
 
 [libraries]
 
@@ -171,6 +172,7 @@ androidx-wear-compose-ui-tooling = { module = "androidx.wear.compose:compose-ui-
 androidx-health-services-client = { module = "androidx.health:health-services-client", version.ref = "health" }
 play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version.ref = "play-services-wearable" }
 androidx-wear = { module = "androidx.wear:wear", version.ref = "wear" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
