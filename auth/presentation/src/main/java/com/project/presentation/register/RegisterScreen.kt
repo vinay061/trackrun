@@ -45,6 +45,8 @@ import com.project.domain.UserDataValidator
 
 @Composable
 fun RegisterScreenRoot(
+    onLoginInClick: () -> Unit,
+    onRegisterClick: () -> Unit,
     viewModel: RegisterViewModel = koinViewModel()
 ) {
     val state = viewModel.state
