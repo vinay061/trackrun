@@ -25,6 +25,7 @@ android {
 
 dependencies {
     implementation(projects.auth.domain)
+    implementation(libs.bundles.koin)
 //    implementation(libs.androidx.appcompat)
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.material)
