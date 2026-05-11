@@ -38,6 +38,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     api(libs.androidx.compose.material3)
     implementation(projects.core.presentation.designsystem)
+    implementation(projects.core.presentation.ui)
+    implementation(projects.core.domain)
     implementation(projects.auth.domain)
     implementation(libs.bundles.koin.compose)
 //    implementation(libs.androidx.appcompat)

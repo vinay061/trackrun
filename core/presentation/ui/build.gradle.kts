@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -21,6 +22,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+    buildFeatures {
+        compose = true
+    }
+
 }
 
 dependencies {
@@ -30,6 +35,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(projects.core.domain)
+    implementation(projects.core.presentation.designsystem)
 //    implementation(libs.androidx.appcompat)
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.material)

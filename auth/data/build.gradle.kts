@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.project.data"
+    namespace = "com.project.auth.data"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -25,7 +25,10 @@ android {
 
 dependencies {
     implementation(projects.auth.domain)
+    implementation(projects.core.domain)
+    implementation(projects.core.data)
     implementation(libs.bundles.koin)
+    implementation(libs.bundles.ktor)
 //    implementation(libs.androidx.appcompat)
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.material)

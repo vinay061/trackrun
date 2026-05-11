@@ -1,7 +1,8 @@
 package com.project.trackrun
 
 import android.app.Application
-import com.project.data.di.authDataModule
+import com.project.auth.data.di.authDataModule
+import com.project.core.data.di.coreDataModule
 import com.project.presentation.di.authViewModelModule
 import com.project.trackrun.di.appModule
 import org.koin.android.ext.koin.androidContext
@@ -21,6 +22,7 @@ class TrackerApp: Application() {
                 appModule,
                 authDataModule,
                 authViewModelModule,
+                coreDataModule
             )
         }
     }

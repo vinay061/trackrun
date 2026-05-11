@@ -1,1 +1,1 @@
-com.project.data
+com.project.auth.data

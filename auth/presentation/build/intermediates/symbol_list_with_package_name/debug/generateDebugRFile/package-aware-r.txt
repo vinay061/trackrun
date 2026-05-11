@@ -6,11 +6,13 @@ string contains_lowercase_char
 string contains_uppercase_char
 string create_account
 string email
+string error_email_exists
 string example_email
 string login
 string must_be_a_valid_email
 string password
 string register
+string registration_successful
 string runique
 string runique_description
 string sign_in

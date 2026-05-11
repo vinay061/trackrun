@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
+    //alias(libs.plugins.trackrun)
 }
 
 android {
@@ -61,4 +62,5 @@ dependencies {
 
     implementation(projects.auth.presentation)
     implementation(projects.auth.data)
+    implementation(projects.core.data)
 }
