@@ -1,9 +1,9 @@
-com.project.data-pngs-0 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/generated/res/pngs/debug
-com.project.data-updated_navigation_xml-1 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/generated/updated_navigation_xml/debug
-com.project.data-mergeDebugResources-2 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.project.data-mergeDebugResources-3 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.project.data-debug-4 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/merged_res/debug/mergeDebugResources
-com.project.data-debug-5 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/packaged_res/debug/packageDebugResources
-com.project.data-debug-6 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/src/debug/res
-com.project.data-main-7 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/src/main/res
+com.project.auth.data-pngs-0 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/generated/res/pngs/debug
+com.project.auth.data-updated_navigation_xml-1 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/generated/updated_navigation_xml/debug
+com.project.auth.data-mergeDebugResources-2 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.project.auth.data-mergeDebugResources-3 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.project.auth.data-debug-4 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/merged_res/debug/mergeDebugResources
+com.project.auth.data-debug-5 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/build/intermediates/packaged_res/debug/packageDebugResources
+com.project.auth.data-debug-6 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/src/debug/res
+com.project.auth.data-main-7 /Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/auth/data/src/main/res
 gradleHome-0 /Users/vinay/.gradle/gradle-8.13

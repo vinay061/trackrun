@@ -1,5 +1,6 @@
 package com.project.presentation.register
 
+import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -17,6 +18,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -30,7 +33,6 @@ import com.project.designsystem.CheckIcon
 import com.project.designsystem.CrossIcon
 import com.project.designsystem.EmailIcon
 import com.project.designsystem.Poppins
-import com.project.designsystem.R
 import com.project.designsystem.RuniqueDarkRed
 import com.project.designsystem.RuniqueGray
 import com.project.designsystem.RuniqueGreen
@@ -41,15 +43,39 @@ import com.project.designsystem.components.RuniquePasswordTextField
 import com.project.designsystem.components.RuniqueActionButton
 import com.project.domain.PasswordValidationState
 import com.project.domain.UserDataValidator
+import com.project.ui.ObserveAsEvents
 
 
 @Composable
 fun RegisterScreenRoot(
     onLoginInClick: () -> Unit,
-    onRegisterClick: () -> Unit,
+    onSuccessfulRegistration: () -> Unit,
     viewModel: RegisterViewModel = koinViewModel()
 ) {
     val state = viewModel.state
+    val context = LocalContext.current
+    val keyboardController = LocalSoftwareKeyboardController.current
+    ObserveAsEvents(viewModel.events) { event ->
+        when(event) {
+            is RegisterEvent.Error -> {
+                keyboardController?.hide()
+                Toast.makeText(
+                    context,
+                    event.error.asString(context),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+            is RegisterEvent.RegistrationSuccess -> {
+                keyboardController?.hide()
+                Toast.makeText(
+                    context,
+                    com.project.presentation.R.string.registration_successful,
+                    Toast.LENGTH_LONG
+                ).show()
+                onSuccessfulRegistration()
+            }
+        }
+    }
     RegisterScreen(
         state = state,
         onAction = viewModel::onAction

@@ -1,1 +1,1 @@
-com.project.data.test
+com.project.auth.data.test
