@@ -64,4 +64,12 @@ dependencies {
     implementation(projects.auth.presentation)
     implementation(projects.auth.data)
     implementation(projects.core.data)
+    implementation(projects.core.domain)
+
+    // Crypto
+    implementation(libs.androidx.security.crypto.ktx)
+
+    implementation(libs.bundles.koin)
+
+    //api(libs.core)
 }
