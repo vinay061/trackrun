@@ -8,7 +8,7 @@ import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import androidx.core.content.edit
 
-class EncryptionStorageSession(
+class EncryptedSessionStorage(
     private val sharedPreferences: SharedPreferences
 ): SessionStorage {
     override suspend fun get(): AuthInfo? {
