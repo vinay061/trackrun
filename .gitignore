@@ -1,4 +1,4 @@
-*.iml
+#*.iml
 .gradle
 /local.properties
 /.idea/caches
@@ -7,11 +7,72 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
+#.DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+#local.properties
 .idea/*
 /.idea/*
+
+# =========================
+# IntelliJ / Android Studio
+# =========================
+*.iml
+.idea/
+!.idea/codeStyles
+!.idea/inspectionProfiles
+
+# macOS
+.DS_Store
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+*/build/
+.kotlin/
+
+# =========================
+# Local machine configs
+# =========================
+local.properties
+
+# =========================
+# Android Studio generated
+# =========================
+captures/
+.externalNativeBuild/
+.cxx/
+
+# =========================
+# Generated APKs / Bundles
+# =========================
+*.apk
+*.aab
+*.ap_
+
+# =========================
+# Java / Kotlin compiled files
+# =========================
+*.class
+*.dex
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*~
+
+# =========================
+# OS generated files
+# =========================
+Thumbs.db
