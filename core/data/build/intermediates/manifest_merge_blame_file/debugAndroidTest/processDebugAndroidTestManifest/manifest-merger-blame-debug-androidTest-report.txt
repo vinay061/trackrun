@@ -3,24 +3,24 @@
 3    package="com.project.core.data.test" >
 4
 5    <uses-sdk
-5-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:5:5-74
+5-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:5:15-41
+6-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:5:15-41
 7        android:targetSdkVersion="36" />
-7-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:5:42-71
+7-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:5:42-71
 8
 9    <instrumentation
-9-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:7:5-11:76
+9-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:7:5-11:76
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:7:22-76
+10-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:7:22-76
 11        android:functionalTest="false"
-11-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:10:22-52
+11-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:10:22-52
 12        android:handleProfiling="false"
-12-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:9:22-53
+12-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:9:22-53
 13        android:label="Tests for com.project.core.data.test"
-13-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:11:22-74
+13-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:11:22-74
 14        android:targetPackage="com.project.core.data.test" />
-14-->/Users/vinay/Documents/Root_Documents/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9640130878174652045.xml:8:22-72
+14-->/Users/vinay/Storage.nosync/codingdocs/project learning/android/trackrun/core/data/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest3203151551144772267.xml:8:22-72
 15
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
 16-->[androidx.work:work-runtime:2.10.3] /Users/vinay/.gradle/gradle-8.13/caches/9.4.1/transforms/e24dbe7c446625bc0cf899eee99208f2/transformed/work-runtime-2.10.3/AndroidManifest.xml:23:5-68
