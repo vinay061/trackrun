@@ -71,5 +71,8 @@ dependencies {
 
     implementation(libs.bundles.koin)
 
+
+    //Splash screen
+    implementation(libs.androidx.core.splashscreen)
     //api(libs.core)
 }
