@@ -81,6 +81,7 @@ projectMinSdkVersion = "25"
 projectTargetSdkVersion = "36"
 projectCompileSdkVersion = "36"
 lifecycleViewmodelKtx = "2.10.0"
+material3 = "1.4.0"
 
 [libraries]
 
@@ -175,6 +176,7 @@ androidx-health-services-client = { module = "androidx.health:health-services-cl
 play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version.ref = "play-services-wearable" }
 androidx-wear = { module = "androidx.wear:wear", version.ref = "wear" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
