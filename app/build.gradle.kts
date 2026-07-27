@@ -63,6 +63,7 @@ dependencies {
 
     implementation(projects.auth.presentation)
     implementation(projects.auth.data)
+    implementation(projects.core.presentation.designsystem)
     implementation(projects.core.data)
     implementation(projects.core.domain)
     implementation(projects.run.presentation)

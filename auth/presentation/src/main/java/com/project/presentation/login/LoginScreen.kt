@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.project.designsystem.EmailIcon
 import com.project.designsystem.Poppins
+import com.project.designsystem.TrackrunTheme
 import com.project.designsystem.components.GradientBackground
 import com.project.designsystem.components.RuniqueActionButton
 import com.project.designsystem.components.RuniquePasswordTextField
@@ -185,8 +186,10 @@ fun LoginScreen(
 @Preview
 @Composable
 private fun LoginScreenPreview() {
-    LoginScreen(
-        state = LoginState(),
-        onAction = {}
-    )
+    TrackrunTheme{
+        LoginScreen(
+            state = LoginState(),
+            onAction = {}
+        )
+    }
 }
