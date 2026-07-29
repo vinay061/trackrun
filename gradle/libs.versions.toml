@@ -62,6 +62,15 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 
+junit5 = "5.10.1"
+junit5-plugin = "1.10.0.0"
+junit5-compose = "1.4.0"
+mockk = "1.13.11"
+assertk = "0.28.1"
+turbine = "1.1.0"
+composeUiTestManifest = "1.6.8"
+coroutines-test = "1.8.1"
+
 # Wear OS
 composeWearOs = "1.5.4"
 composeMaterialWearOs = "1.5.4"
@@ -82,6 +91,7 @@ projectTargetSdkVersion = "36"
 projectCompileSdkVersion = "36"
 lifecycleViewmodelKtx = "2.10.0"
 material3 = "1.4.0"
+
 
 [libraries]
 
@@ -111,6 +121,13 @@ androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", versio
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 androidx-compose-foundation = { module = "androidx.compose.foundation:foundation" }
 
+
+# Gradle
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
 
 # Navigation
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
@@ -178,6 +195,18 @@ androidx-wear = { module = "androidx.wear:wear", version.ref = "wear" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
 
+# Test dependencies
+junit5-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit5-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+junit5-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit5" }
+junit5-android-test-compose = { module = "de.mannodermaus.junit5:android-test-compose", version.ref = "junit5-compose" }
+junit5-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "1.10.1" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines-test" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
@@ -189,22 +218,23 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrai
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-plugin" }
 room = { id = "androidx.room", version.ref = "room" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin" }
 
 # Runique custom plugins
-runique-android-application = { id = "runique.android.application", version = "unspecified" }
-runique-android-application-compose = { id = "runique.android.application.compose", version = "unspecified" }
-runique-android-library = { id = "runique.android.library", version = "unspecified" }
-runique-android-library-compose = { id = "runique.android.library.compose", version = "unspecified" }
-runique-android-feature-ui = { id = "runique.android.feature.ui", version = "unspecified" }
-runique-android-room = { id = "runique.android.room", version = "unspecified" }
-runique-android-dynamic-feature = { id = "runique.android.dynamic.feature", version = "unspecified" }
-runique-jvm-library = { id = "runique.jvm.library", version = "unspecified" }
-runique-jvm-ktor = { id = "runique.jvm.ktor", version = "unspecified" }
-runique-android-application-wear-compose = { id = "runique.android.application.wear.compose", version = "unspecified" }
-
+tracker-android-application = { id = "tracker.android.application", version = "unspecified" }
+tracker-android-application-compose = { id = "tracker.android.application.compose", version = "unspecified" }
+tracker-android-library = { id = "tracker.android.library", version = "unspecified" }
+tracker-android-library-compose = { id = "tracker.android.library.compose", version = "unspecified" }
+tracker-android-feature-ui = { id = "tracker.android.feature.ui", version = "unspecified" }
+tracker-android-room = { id = "tracker.android.room", version = "unspecified" }
+tracker-android-dynamic-feature = { id = "tracker.android.dynamic.feature", version = "unspecified" }
+tracker-jvm-library = { id = "tracker.jvm.library", version = "unspecified" }
+tracker-jvm-ktor = { id = "tracker.jvm.ktor", version = "unspecified" }
+tracker-android-application-wear-compose = { id = "tracker.android.application.wear.compose", version = "unspecified" }
+tracker-jvm-junit5 = { id = "tracker.jvm.junit5", version = "unspecified" }
+tracker-android-junit5 = { id = "tracker.android.junit5", version = "unspecified" }
 
 [bundles]
 compose = [
