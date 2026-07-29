@@ -1,17 +1,10 @@
 plugins {
-    //id("java-library")
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    //alias(libs.plugins.jetbrains.kotlin.jvm)
+    alias(libs.plugins.tracker.jvm.library)
+    alias(libs.plugins.tracker.jvm.junit5)
 }
 
 dependencies {
     implementation(projects.core.domain)
+    //testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
-//java {
-//    sourceCompatibility = JavaVersion.VERSION_11
-//    targetCompatibility = JavaVersion.VERSION_11
-//}
-//kotlin {
-//    compilerOptions {
-//        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
-//    }
-//}
