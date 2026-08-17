@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tracker.core.android_test"
+    namespace = "com.project.core.android_test"
     compileSdk = 37
 
     defaultConfig {
@@ -26,4 +26,7 @@ dependencies {
     implementation(libs.ktor.client.mock)
     implementation(libs.bundles.ktor)
     implementation(libs.coroutines.test)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
 }
