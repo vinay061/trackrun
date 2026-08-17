@@ -222,7 +222,7 @@ junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5-plugin" 
 room = { id = "androidx.room", version.ref = "room" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin" }
 
-# Runique custom plugins
+# Trackrun custom plugins
 tracker-android-application = { id = "tracker.android.application", version = "unspecified" }
 tracker-android-application-compose = { id = "tracker.android.application.compose", version = "unspecified" }
 tracker-android-library = { id = "tracker.android.library", version = "unspecified" }

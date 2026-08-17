@@ -30,6 +30,10 @@ gradlePlugin {
             id = "tracker.android.application.wear.compose"
             implementationClass = "AndroidApplicationWearComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "tracker.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
         register("jvmJunit5") {
             id = "tracker.jvm.junit5"
             implementationClass = "JvmJUnit5ConventionPlugin"

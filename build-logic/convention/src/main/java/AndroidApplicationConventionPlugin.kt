@@ -8,7 +8,7 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {
-                apply("trackrun.android.application")
+                apply("tracker.android.application")
                 apply("org.jetbrains.kotlin.android")
             }
             extensions.configure<ApplicationExtension> {

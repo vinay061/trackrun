@@ -6,7 +6,7 @@ import org.gradle.kotlin.dsl.getByType
 class AndroidApplicationComposeConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
-            pluginManager.apply("trackrun.android.application")
+            pluginManager.apply("tracker.android.application")
 
             val extension = extensions.getByType<ApplicationExtension>()
         }

@@ -7,7 +7,7 @@ class AndroidApplicationWearComposeConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {
-                apply("trackrun.android.application.compose")
+                apply("tracker.android.application.compose")
             }
 
             dependencies {

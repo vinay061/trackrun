@@ -1,5 +1,7 @@
-import com.android.build.api.dsl.LibraryExtension
+import com.android.build.api.dsl.DynamicFeatureExtension
 import com.project.convention.ExtensionType
+import com.project.convention.addUiLayerDependencies
+import com.project.convention.configureAndroidCompose
 import com.project.convention.configureBuildTypes
 import com.project.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
@@ -8,30 +10,28 @@ import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.kotlin
 
-class AndroidLibraryConventionPlugin: Plugin<Project> {
+class AndroidDynamicFeatureConventionPlugin : Plugin<Project> {
+
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {
-                apply("tracker.android.library")
+                apply("com.android.dynamic-feature")
                 apply("org.jetbrains.kotlin.android")
+                apply("org.jetbrains.kotlin.plugin.compose")
             }
-
-            extensions.configure<LibraryExtension> {
+            extensions.configure<DynamicFeatureExtension> {
                 configureKotlinAndroid(this)
+                configureAndroidCompose(this)
 
                 configureBuildTypes(
                     commonExtension = this,
-                    extensionType = ExtensionType.LIBRARY
+                    extensionType = ExtensionType.DYNAMIC_FEATURE
                 )
+            }
 
-                defaultConfig {
-                    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-                    consumerProguardFiles("consumer-rules.pro")
-                }
-
-                dependencies {
-                    "testImplementation"(kotlin("test"))
-                }
+            dependencies {
+                addUiLayerDependencies(target)
+                "testImplementation"(kotlin("test"))
             }
         }
     }
